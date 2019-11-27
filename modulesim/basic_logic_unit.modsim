@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ModuleSim>
+  <view camX="48.31338775408827" camY="0.8538517319056496" zoom="3"/>
+  <ModuleSim>
+    <module ID="0" type="SWITCH">
+      <dim orient="0" x="-350.0" y="150.0"/>
+      <inputs/>
+      <outputs>
+        <output ID="1"/>
+      </outputs>
+      <data switch_set="0000"/>
+    </module>
+    <module ID="2" type="SWITCH">
+      <dim orient="0" x="-200.0" y="150.0"/>
+      <inputs/>
+      <outputs>
+        <output ID="3"/>
+      </outputs>
+      <data switch_set="0000"/>
+    </module>
+    <module ID="4" type="SWITCH">
+      <dim orient="0" x="-50.0" y="150.0"/>
+      <inputs/>
+      <outputs>
+        <output ID="5"/>
+      </outputs>
+      <data switch_set="0000"/>
+    </module>
+    <module ID="6" type="LOGIC">
+      <dim orient="0" x="-200.0" y="-50.0"/>
+      <inputs>
+        <input ID="9"/>
+        <input ID="10"/>
+        <input ID="11"/>
+      </inputs>
+      <outputs>
+        <output ID="7"/>
+        <output ID="8"/>
+      </outputs>
+    </module>
+    <module ID="12" type="REGISTER">
+      <dim orient="0" x="-200.0" y="-225.0"/>
+      <inputs>
+        <input ID="13"/>
+        <input ID="14"/>
+      </inputs>
+      <outputs>
+        <output ID="15"/>
+        <output ID="16"/>
+      </outputs>
+      <data latched_value="0000"/>
+    </module>
+    <module ID="17" type="SWITCH">
+      <dim orient="0" x="-25.0" y="-175.0"/>
+      <inputs/>
+      <outputs>
+        <output ID="18"/>
+      </outputs>
+      <data switch_set="0000"/>
+    </module>
+  </ModuleSim>
+  <links>
+    <link src="1" targ="9" type="StraightPath"/>
+    <link src="3" targ="10" type="StraightPath"/>
+    <link src="5" targ="11" type="StraightPath"/>
+    <link src="7" targ="13" type="StraightPath"/>
+    <link src="18" targ="14" type="StraightPath"/>
+  </links>
+</ModuleSim>
